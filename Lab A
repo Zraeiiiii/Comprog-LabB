@@ -1,0 +1,102 @@
+//DECLARING VARIABLES
+
+// Bernardino, John Paul C. | DIT 1-2
+#include <stdio.h>
+int main(void){
+    
+    int age = 20;
+    float height = 1.67;
+    char name [20] = "John Paul";
+    
+    printf("My Age: %d\n", age);
+    printf("My Height:  %.2f m \n", height);
+    printf("My Name: %s\n", name);
+    return 0;
+}
+
+
+// USING OPERATORS
+
+
+#include <stdio.h>
+#include <stdbool.h>
+int main(void){
+    
+    int a = 9, b = 10;
+    double result = (double) b / a;
+    int add = a + b;
+    int min = b - a;
+    int mul = a * b;
+    double divi = a / b;
+    int x = 10;
+    x += 5;
+    bool prob1 = (a < b) && (x == 15);
+    bool prob2 = (a > b) || (x == 15);
+    bool prob3 = (a == b);
+    
+    printf("a + b = %d\n", add);
+    printf("a - b = %d\n", min);
+    printf("a * b = %d\n", mul);
+    printf("b / a = %.2lf\n", result);
+    printf("x after x+=5: %d\n", x);
+    printf("prob1 (a<b && x==15): %d\n", prob1);
+    printf("prob2 (a>b || x==15): %d\n", prob2);
+    printf("prob3 (a==b): %d\n", prob3);
+    
+    return 0;
+}
+
+// USING LOOPS
+
+#include <stdio.h>
+int main(void){
+    
+    int i;
+    
+    printf("while loop 1 to 10:\n");
+    i = 1;
+    while (i<= 10) {
+        printf("%d ", i);
+        i++;
+    }
+    printf("\n\n");
+    
+    printf("for loop even 2 to 20:\n");
+    
+    for (i = 2; i <= 20; i += 2) {
+        printf("%d ", i);
+    }
+    
+    printf("\n\n");
+    
+    printf("do-while loop 1 to 5\n");
+    i = 1;
+    
+    do {
+        printf("%d ", i);
+        i++;
+    }
+    while (i <= 5);
+    printf("\n");
+    return 0;
+}
+
+
+// USING IF-ELSE STATEMENT
+
+
+// Bernardino, John Paul C. | DIT 1-2
+#include <stdio.h>
+int main(void){
+    int number;
+    printf("Enter a number: ");
+    scanf("%d", &number);
+    if (number % 2 == 0) {
+        printf("%d is even.\n", number);
+        }
+    else {
+        printf("%d is odd. \n", number);
+    }
+    
+    return 0;
+}
